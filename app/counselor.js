@@ -1,8 +1,9 @@
-import { Character } from "./character";
+import { Character } from "./character.js";
 
 export class Counselor extends Character {
-  constructor(tvShow, name, house, age, communicate, status, characterAdvised) {
-    super(tvShow, name, house, age, communicate, status);
+  constructor(name, house, age, characterAdvised) {
+    super(name, house, age);
     this.characterAdvised = characterAdvised;
+    this.communicate = "I think I'll be dying soon";
   }
 }

@@ -1,11 +1,10 @@
 export class Character {
-  constructor(tvShow, name, house, age, communicate, status = "alive") {
-    this.tvShow = tvShow;
+  constructor(name, house, age) {
+    this.tvShow = "Game of Thrones";
     this.name = name;
     this.house = house;
     this.age = age;
-    this.communicate = this.saySentence();
-    this.status = status;
+    this.status = "alive";
   }
 
   endLife() {
@@ -14,7 +13,6 @@ export class Character {
   }
 
   saySentence() {
-    this.communicate = `${this.communicate}`;
-    return this.communicate;
+    return `${this.communicate}`;
   }
 }

@@ -5,11 +5,11 @@ describe("Given Squire class", () => {
     test("Then it should create an object with Squire and Character class properties", () => {
       const squire = new Squire(
         "Game of Thrones",
-        "Joffrey",
-        "Baratheon",
-        20,
+        "Bronn",
+        "Lannister",
+        25,
         "alive",
-        "fighter",
+        "Jaime",
         10
       );
 

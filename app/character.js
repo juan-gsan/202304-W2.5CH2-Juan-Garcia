@@ -1,18 +1,19 @@
 export class Character {
+  static tvShow = "Game of Thrones";
+
   constructor(name, house, age) {
-    this.tvShow = "Game of Thrones";
     this.name = name;
     this.house = house;
     this.age = age;
-    this.status = "alive";
+    this.alive = true;
+    this.communicate = "";
   }
 
   endLife() {
-    this.status = "passed";
-    return this.status;
+    this.alive = false;
   }
 
   saySentence() {
-    return `${this.communicate}`;
+    return this.status ? this.communicate : "I'm dead";
   }
 }

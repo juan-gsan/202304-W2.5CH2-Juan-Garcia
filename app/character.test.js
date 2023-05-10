@@ -5,7 +5,7 @@ describe("Given Character class", () => {
     "Joffrey",
     "Baratheon",
     20,
-    "alive"
+    true
   );
   describe("When we instantiate it", () => {
     test("Then it should create an object with Character class properties", () => {
@@ -13,7 +13,7 @@ describe("Given Character class", () => {
       expect(character).toHaveProperty("name", "Joffrey");
       expect(character).toHaveProperty("house", "Baratheon");
       expect(character).toHaveProperty("age", 20);
-      expect(character).toHaveProperty("status", "alive");
+      expect(character).toHaveProperty("alive", true);
     });
   });
 });

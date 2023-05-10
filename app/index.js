@@ -2,6 +2,7 @@ import { King } from "./king.js";
 import { Fighter } from "./fighter.js";
 import { Counselor } from "./counselor.js";
 import { Squire } from "./squire.js";
+import { Character } from "./character.js";
 
 const charactersContainer = [];
 
@@ -23,7 +24,7 @@ charactersContainer.push(
   myCharacter5
 );
 
-console.log(myCharacter1.tvShow);
+console.log(Character.tvShow);
 
 const talk = () => {
   const messages = [];

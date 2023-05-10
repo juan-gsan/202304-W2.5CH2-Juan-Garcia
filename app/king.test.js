@@ -7,7 +7,7 @@ describe("Given King class", () => {
     "Baratheon",
     20,
     "You're all gonna die",
-    "alive",
+    true,
     5
   );
   describe("When we instantiate it", () => {
@@ -17,14 +17,14 @@ describe("Given King class", () => {
       expect(king).toHaveProperty("house", "Baratheon");
       expect(king).toHaveProperty("age", 20);
       expect(king).toHaveProperty("communicate", "You're all gonna die");
-      expect(king).toHaveProperty("status", "alive");
+      expect(king).toHaveProperty("alive", true);
       expect(king).toHaveProperty("rulingYears", 5);
     });
   });
 
   describe("When we call method endLife", () => {
-    test("Then it should return 'passed", () => {
-      const expectedOutput = "passed";
+    test("Then it should return false", () => {
+      const expectedOutput = false;
 
       expect(king.endLife()).toBe(expectedOutput);
     });

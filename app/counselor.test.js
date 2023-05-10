@@ -8,7 +8,7 @@ describe("Given Counselor class", () => {
         "Joffrey",
         "Baratheon",
         20,
-        "alive",
+        true,
         "king"
       );
 
@@ -16,7 +16,7 @@ describe("Given Counselor class", () => {
       expect(counselor).toHaveProperty("name", "Joffrey");
       expect(counselor).toHaveProperty("house", "Baratheon");
       expect(counselor).toHaveProperty("age", 20);
-      expect(counselor).toHaveProperty("status", "alive");
+      expect(counselor).toHaveProperty("alive", true);
       expect(counselor).toHaveProperty("characterAdvised", "king");
     });
   });

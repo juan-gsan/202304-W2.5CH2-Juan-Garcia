@@ -8,7 +8,7 @@ describe("Given Squire class", () => {
         "Bronn",
         "Lannister",
         25,
-        "alive",
+        true,
         "Jaime",
         10
       );
@@ -17,7 +17,7 @@ describe("Given Squire class", () => {
       expect(squire).toHaveProperty("name", "Joffrey");
       expect(squire).toHaveProperty("house", "Baratheon");
       expect(squire).toHaveProperty("age", 20);
-      expect(squire).toHaveProperty("status", "alive");
+      expect(squire).toHaveProperty("alive", true);
       expect(squire).toHaveProperty("knight", "fighter");
       expect(squire).toHaveProperty("pelotismo", 10);
     });
